@@ -9,7 +9,6 @@ Template.add_product.events({
 
 
     if(file) {
-      console.log('you have a file')
       fsFile = new FS.File(file);
       ProductsImages.insert(fsFile, function(error, result) {
         if(!error) {
@@ -25,7 +24,6 @@ Template.add_product.events({
         }
       });
     } else {
-      console.log('no file :(')
       var productImage = 'img/noimage.png';
       Products.insert({
         name: name,
