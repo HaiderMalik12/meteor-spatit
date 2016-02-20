@@ -1,5 +1,5 @@
 <body>
-  {{renderPage}}
+  {{renderTemplate}}
 </body>
 
 <template name="layout">
@@ -9,7 +9,7 @@
       <div class="col-md-3">
         {{> sidebar}}
       </div>
-      <div class="col-md-3">
+      <div class="col-md-9">
         {{> flashMessages}}
         {{> yield}}
       </div>
